@@ -15,6 +15,9 @@
     --text-body-size:16px;
 }
 input,label{display: none;}
+body{
+    position: relative;
+}
 
 .division{
     width: 100%;
@@ -23,6 +26,15 @@ input,label{display: none;}
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
+}
+#wp{
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 3;
 }
 .uno{
     background-color: var(--color-two);
@@ -76,9 +88,33 @@ z-index: 1;
     background-color: var(--color-three);
     
 }
+.dos img{
+    width: 100px;
+    height: 120px;
+}
+.dos table{
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.dos td,.dos tr{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
 .tres{
-    
     background-color: var(--color-two);
+}
+.tres img{
+    width: 100px;
+    height: 120px;
+}
+.tres td,.tres tr{
+padding: 1rem;
+
+}
+#barra{
+    height: 60vh;
 }
 .cuatro{
     background-color: var(--color-two);
@@ -86,6 +122,7 @@ z-index: 1;
     z-index: -2;
     display: flex;
     align-items: baseline;
+    scroll-behavior:inherit;
 }
 .cuatro>div{
     background-color: var(--color-three);
@@ -98,14 +135,17 @@ z-index: 1;
 }
 .cuatro>table, .cuatro>h1{
     position: relative;
-    left: 20vw;
+    left: 1vw;
 }
-.horizontal{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
+.cuatro td{
+    width: 40vw;
+    border: 1px dashed var(--color-one);
+    border-radius: 10px;
+    padding: 10px;
+    
 }
+
+
 h1{
     font-size: var(--text-titulo-size);
     color: var(--color-five);
@@ -117,6 +157,10 @@ p,
     font-size: var(--text-subsection-size);
     font-weight: medium;
     color: var(--color-five);
+}
+.titulo{
+    
+    font-weight: bold;
 }
 .subtitulo{
     font-size: var(--text-subtitulo-size);
@@ -137,13 +181,6 @@ p,
 ul{
     list-style: none;
 }
-table{
- text-align: center; 
-} 
-td,tr{
-    
-    padding: 0;
-}
 .cinco{
     display: flex;
     flex-direction: column;
@@ -158,11 +195,7 @@ td,tr{
 .filaDos>td>div{width: 35vh;height: 20vh;background-color: var(--color-three);position:absolute;}
 .filaUno>td{text-align: left;}
 .filaDos>td{padding-left: 40vh;}
-td,tr{
-padding-top: 2vh;
-padding-left: 5vh;
-text-align: left;
-}
+
 .seis{
     background-color: var(--color-three);
 }
@@ -197,11 +230,15 @@ height: 10vh;
     flex-direction: row;
     justify-content: flex-end;
     background-color: var(--color-two);
+    align-items: center;
     
 }
 .navegar>li>a{
     display: inline-block;
-    padding: 3vh;
+    padding: 0vh;
+    margin-left: 20px;
+    margin-right: 20px;
+
     color: var(--color-five);
     font-size: var(--text-subsection-size);
     text-decoration: none; 
@@ -216,6 +253,19 @@ nav{
     box-shadow: 0 1px 10px white;
     z-index: 1;
     background-color: var(--color-two);
+}
+#descarga{
+    border: 1px solid var(--color-one);
+    border-radius: 20px;
+    padding: 10px;   
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: var(--color-one);
+    color: var(--color-five);
+}
+#descarga:hover{
+    background-color: var(--color-two);
+    
 }
 @media screen and (max-width:600px){
  
@@ -250,8 +300,10 @@ nav{
      width: 80%;
      font-size: var(--text-subsection-size);
  }
+ .cuatro td{
+     font-size: 20px;
+ }
  
-    
 }
 
 
