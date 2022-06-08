@@ -105,8 +105,8 @@ body {
 }
 
 .dos img {
-    width: 100px;
-    height: 120px;
+    width: 70px;
+    height: 90px;
 }
 
 .dos table {
@@ -413,6 +413,9 @@ nav {
 
     .cuatro td {
         font-size: 20px;
+    }
+    .tre{
+        display:none;
     }
 
 }
