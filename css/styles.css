@@ -109,19 +109,26 @@ body {
     width: 70px;
     height: 90px;
 }
-
-.dos table {
-    text-align: center;
-    margin-left: 10rem;
-    margin-right: 10rem;
+.educacion{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.educacion>div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+    width: 200px;
+}
+.educacion>div>img{
+    position: relative;
+    left: calc((200px - 70px) / 2);
 }
 
-.dos td,
-.dos tr {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-}
+
 
 .tres {
     background-color: var(--color-two);
@@ -134,7 +141,7 @@ body {
 
 .tres td,
 .tres tr {
-    padding: 0.5rem;
+    padding: 0.3rem;
 
 }
 
@@ -414,9 +421,6 @@ nav {
 
     .cuatro td {
         font-size: 20px;
-    }
-    .tre{
-        display:none;
     }
 
 }
