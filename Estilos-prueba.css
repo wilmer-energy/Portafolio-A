@@ -1,0 +1,24 @@
+/*Hacer que el secction tome el tamaño de su contenido
+Hacer que el contenido baje*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+div {
+    background-color: gray;
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+}
