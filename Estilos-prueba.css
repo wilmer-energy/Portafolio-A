@@ -6,19 +6,42 @@ Hacer que el contenido baje*/
     box-sizing: border-box;
 }
 section {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    width: 80%;
+    display: grid;
     background-color: aqua;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro cinco seis"
+    "siete siete siete"
+    ;
 }
-
-div {
+div{
     background-color: gray;
     padding: 1rem;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
+    
+}
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{grid-area: tres;}
+.cuatro{
+    grid-area: cuatro;
+}
+.cinco{
+    grid-area: cinco;
+    height: 600px;
+    width: 500px;
+}
+.seis{
+    grid-area: seis;
+}
+.siete{
+    grid-area: siete;
 }
